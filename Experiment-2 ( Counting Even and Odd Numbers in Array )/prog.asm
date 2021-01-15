@@ -15,26 +15,14 @@ section .text
     global _start
 
 _start:
-    mov eax, 1          ;sys_call
-    mov ecx, 0          ;counter = 0
-    int 0x80
-  
-elemscan:
-    cmp ecx, 4
-    je exit
-    and [array + ecx], 1          ; arr[i]%2
-    jz eveninc
-    jmp oddinc
 
-eveninc:
-    add [eno] , 1
-    inc ecx
-    jmp elemscan
-
-oddinc:
-    add [eno] , 1
-    inc ecx
-    jmp elemscan
+    mov eax, 0x04
+    mov [eno], eax
+    xor eax, eax
+    mov eax, 0x05
+    mov [ono], eax
+    xor eax, eax
+    
 
 exit:
     mov eax, 4      ;sys_write
@@ -43,26 +31,24 @@ exit:
     mov edx, m1len
     int 0x80
 
-    mov eax, 4      ;sys_write
-    mov ebx, 1
-    mov ecx, eno
-    mov edx, 4
-    int 0x80
+ 
+    mov     ecx, eno
+    mov     edx, 4
+    mov     ebx, 1
+    mov     eax, 4
+    int     80h
+ 
 
-    mov eax, 4      ;sys_write
+    mov eax, 4     
     mov ebx, 1
     mov ecx, m2
     mov edx, m2len
     int 0x80
 
-    mov eax, 4      ;sys_write
-    mov ebx, 1
-    mov ecx, ono
-    mov edx, 4
-    int 0x80
 
-    xor eax, eax
-    xor ebx, ebx
+
+    mov eax, 1
+    mov ebx, 69
     int 0x80
 
 

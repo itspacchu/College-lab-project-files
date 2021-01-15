@@ -1,0 +1,24 @@
+    elemscan:
+        je exit
+        mov eax, [array + ecx]
+        and eax, 1          ; arr[i]%2
+        jz eveninc
+        jmp oddinc
+
+    eveninc:
+        push ax
+        mov eax, [eno]
+        inc eax
+        mov [eno], eax
+        inc ecx
+        pop ax
+        jmp elemscan
+
+    oddinc:
+        push ax
+        mov eax, [ono]
+        inc eax
+        mov [ono], eax
+        inc ecx
+        pop ax
+        jmp elemscan
