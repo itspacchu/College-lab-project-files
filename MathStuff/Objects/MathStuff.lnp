@@ -1,0 +1,6 @@
+".\Objects\countpos.obj",
+".\Objects\arithmetic.obj",
+".\Objects\logical.obj",
+".\Objects\16bit.obj" 
+TO ".\Objects\MathStuff" 
+PRINT(".\Listings\MathStuff.m51") CODE( 0X0000-0X0FFF )

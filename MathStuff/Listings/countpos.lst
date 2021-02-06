@@ -1,0 +1,62 @@
+A51 MACRO ASSEMBLER  COUNTPOS                                                             02/06/2021 14:42:22 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.5.0
+OBJECT MODULE PLACED IN .\Objects\countpos.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE countpos.asm SET(SMALL) DEBUG PRINT(.\Listings\countpos.lst) OBJECT(.\O
+                      bjects\countpos.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0030                   1     ORG 030H
+
+0030 01FD0402          2             dat: db 01H,-03H,04H,02H
+
+                       3     
+
+0000                   4     ORG 0H
+
+0000 7A00              5     MOV R2,#00     ; POSITIVE COUNT
+
+0002 7B00              6     MOV R3,#00      ; NEGATIVE COUNT
+
+0004 7830              7     MOV R0,#30H    ; MEMORY POINTER
+
+0006 7905              8     MOV R1,#05H    ; COUNTER
+
+0008 E6                9     BACK:   MOV A,@R0
+
+0009 33               10     RLC A
+
+000A 5003             11     JNC POS 
+
+000C 0B               12     INC R3
+
+000D 8001             13     SJMP NEXT 
+
+000F 0A               14     POS:     INC R2
+
+0010 08               15     NEXT:   INC R0
+
+0011 D9F5             16                    DJNZ R1,BACK
+
+                      17                   END
+
+A51 MACRO ASSEMBLER  COUNTPOS                                                             02/06/2021 14:42:22 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+BACK . . . . . . .  C ADDR   0008H   A   
+DAT. . . . . . . .  C ADDR   0030H   A   
+NEXT . . . . . . .  C ADDR   0010H   A   
+POS. . . . . . . .  C ADDR   000FH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
