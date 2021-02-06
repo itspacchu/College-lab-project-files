@@ -1,0 +1,69 @@
+A51 MACRO ASSEMBLER  POSNEG                                                               02/06/2021 15:03:35 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.5.0
+OBJECT MODULE PLACED IN .\Objects\posneg.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE posneg.asm SET(SMALL) DEBUG PRINT(.\Listings\posneg.lst) OBJECT(.\Objec
+                      ts\posneg.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0030                   1     ORG 0030H
+
+0030 01FD0402          2             dat: db 01H,-03H,04H,02H,80h
+
+0034 80                      
+0000                   3     ORG 0H
+
+0000 7A00              4             MOV R2,#00     ; POSITIVE COUNT
+
+0002 7B00              5             MOV R3,#00      ; NEGATIVE COUNT
+
+0004 900030            6             MOV DPTR,#0030H    ; MEMORY POINTER
+
+0007 7905              7             MOV R1,#05H    ; COUNTER
+
+0009                   8     BACK:
+
+0009 E4                9             clr a
+
+000A 93               10             MOVC A,@a+DPTR
+
+000B 33               11             RLC A
+
+000C 5003             12             JNC POS 
+
+000E 0B               13             INC R3
+
+000F 8001             14             SJMP NEXT 
+
+0011                  15     POS:     
+
+0011 0A               16             INC R2
+
+0012                  17     NEXT:   
+
+0012 A3               18             INC DPTR
+
+0013 D9F4             19             DJNZ R1,BACK
+
+                      20     END
+
+A51 MACRO ASSEMBLER  POSNEG                                                               02/06/2021 15:03:35 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+BACK . . . . . . .  C ADDR   0009H   A   
+DAT. . . . . . . .  C ADDR   0030H   A   
+NEXT . . . . . . .  C ADDR   0012H   A   
+POS. . . . . . . .  C ADDR   0011H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
