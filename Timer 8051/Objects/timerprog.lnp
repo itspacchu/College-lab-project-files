@@ -1,0 +1,3 @@
+".\Objects\square_wav.obj" 
+TO ".\Objects\timerprog" 
+PRINT(".\Listings\timerprog.m51") CODE( 0X0000-0X0FFF )

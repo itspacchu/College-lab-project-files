@@ -1,0 +1,56 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        02/06/2021  15:16:30  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\square_wav.obj TO .\Objects\timerprog PRINT (.\Listings\timerprog.m51) CODE (0X000
+>> 0-0X0FFF)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\square_wav.obj (SQUARE_WAV)
+
+
+LINK MAP OF MODULE:  .\Objects\timerprog (SQUARE_WAV)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0014H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\timerprog (SQUARE_WAV)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SQUARE_WAV
+  C:0003H         SYMBOL        BACK
+  D:0090H         SYMBOL        P1
+  B:0088H.5       SYMBOL        TF0
+  D:008CH         SYMBOL        TH0
+  D:008AH         SYMBOL        TL0
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  C:000DH         SYMBOL        WAIT
+  C:0000H         LINE#         2
+  C:0003H         LINE#         4
+  C:0006H         LINE#         5
+  C:0009H         LINE#         6
+  C:000BH         LINE#         7
+  C:000DH         LINE#         9
+  C:0010H         LINE#         10
+  C:0012H         LINE#         11
+  -------         ENDMOD        SQUARE_WAV
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0014H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=20
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
