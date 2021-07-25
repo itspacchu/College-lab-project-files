@@ -1,0 +1,26 @@
+//verilog  Source Code 
+module DFlipFlop(clk,d,q,qb); 
+    input clk,d; 
+    output q,qb; 
+    reg q,qb; 
+    always@(posedge clk) 
+    begin 
+        q<=d; 
+        qb<=~d; 
+    end 
+   endmodule
+
+module DFlipFlop_test; 
+    reg clk,d; 
+    wire q,qb; 
+    DFlipFlop uut(clk,d,q,qb); 
+    initial
+    begin 
+        clk=1'b0; 
+        d=1'b0; 
+    end 
+    always #5 clk=~clk; 
+    always #10 d=~d; 
+    initial #200 $stop; 
+    initial $monitor ("clk=%b , D = %b , Q = %b,~Qc = %b",clk,d,q,qb); 
+endmodule

@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  16BIT                                                                02/06/2021 14:28:46 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.5.0
+OBJECT MODULE PLACED IN .\Objects\16bit.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 16bit.asm SET(SMALL) DEBUG PRINT(.\Listings\16bit.lst) OBJECT(.\Objects
+                      \16bit.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 00H
+
+0000 902233            2     MOV DPTR,#2233H 
+
+0003 754011            3     MOV 40h,#11H 
+
+0006 754122            4     MOV 41h,#22H    
+
+0009 E540              5     MOV A,40H        
+
+000B 2582              6     ADD A,DPL 
+
+000D F582              7     MOV DPL,A 
+
+000F E541              8     MOV A,41H    
+
+0011 3583              9     ADDC A,DPH 
+
+0013 E583             10     MOV A,DPH     
+
+                      11     END
+
+A51 MACRO ASSEMBLER  16BIT                                                                02/06/2021 14:28:46 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DPH. . . . . . . .  D ADDR   0083H   A   
+DPL. . . . . . . .  D ADDR   0082H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

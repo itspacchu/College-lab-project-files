@@ -1,3 +1,0 @@
-".\Objects\posneg.obj" 
-TO ".\Objects\timstuff" 
-PRINT(".\Listings\timstuff.m51")

@@ -1,4 +1,0 @@
-".\Objects\SerialComm.obj",
-".\Objects\SerialRecieve.obj" 
-TO ".\Objects\Serialcomms" 
-PRINT(".\Listings\Serialcomms.m51") CODE( 0X0000-0X0FFF )

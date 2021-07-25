@@ -1,0 +1,56 @@
+A51 MACRO ASSEMBLER  SQUARE_WAV                                                           02/06/2021 15:16:29 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.5.0
+OBJECT MODULE PLACED IN .\Objects\square_wav.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE square_wav.asm SET(SMALL) DEBUG PRINT(.\Listings\square_wav.lst) OBJECT
+                      (.\Objects\square_wav.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 00H
+
+0000 758902            2             MOV TMOD,#02H
+
+0003                   3     BACK:      
+
+0003 758CA4            4             MOV TH0,#0A4H
+
+0006 758AA4            5             MOV TL0,#0A4H
+
+0009 B294              6             CPL P1.4
+
+000B D28C              7             SETB TR0
+
+000D                   8     WAIT:     
+
+000D 308DFD            9             JNB TF0,WAIT
+
+0010 C28D             10             CLR TF0
+
+0012 80EF             11             SJMP BACK
+
+                      12     END
+
+A51 MACRO ASSEMBLER  SQUARE_WAV                                                           02/06/2021 15:16:29 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+BACK . . . . . . .  C ADDR   0003H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+WAIT . . . . . . .  C ADDR   000DH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

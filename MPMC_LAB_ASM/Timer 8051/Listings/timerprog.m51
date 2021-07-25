@@ -1,0 +1,88 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        02/06/2021  15:28:50  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\square_wav.obj, .\Objects\timer_1_mode_1.obj TO .\Objects\timerprog PRINT (.\Listi
+>> ngs\timerprog.m51) CODE (0X0000-0X0FFF)
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\square_wav.obj (SQUARE_WAV)
+  .\Objects\timer_1_mode_1.obj (TIMER_1_MODE_1)
+
+
+LINK MAP OF MODULE:  .\Objects\timerprog (SQUARE_WAV)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0014H     ABSOLUTE     
+* OVERLAP * CODE    0000H     001CH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\timerprog (SQUARE_WAV)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        SQUARE_WAV
+  C:0003H         SYMBOL        BACK
+  D:0090H         SYMBOL        P1
+  B:0088H.5       SYMBOL        TF0
+  D:008CH         SYMBOL        TH0
+  D:008AH         SYMBOL        TL0
+  D:0089H         SYMBOL        TMOD
+  B:0088H.4       SYMBOL        TR0
+  C:000DH         SYMBOL        WAIT
+  C:0000H         LINE#         2
+  C:0003H         LINE#         4
+  C:0006H         LINE#         5
+  C:0009H         LINE#         6
+  C:000BH         LINE#         7
+  C:000DH         LINE#         9
+  C:0010H         LINE#         10
+  C:0012H         LINE#         11
+  -------         ENDMOD        SQUARE_WAV
+
+  -------         MODULE        TIMER_1_MODE_1
+  C:0014H         SYMBOL        DELAY
+  C:0006H         SYMBOL        MAIN
+  D:0090H         SYMBOL        P1
+  B:0088H.7       SYMBOL        TF1
+  D:008DH         SYMBOL        TH1
+  D:008BH         SYMBOL        TL1
+  D:0089H         SYMBOL        TMOD
+  B:0088H.6       SYMBOL        TR1
+BL51 BANKED LINKER/LOCATER V6.22                                                      02/06/2021  15:28:50  PAGE 2
+
+
+  C:0000H         LINE#         3
+  C:0003H         LINE#         4
+  C:0006H         LINE#         7
+  C:0009H         LINE#         8
+  C:000CH         LINE#         9
+  C:000EH         LINE#         10
+  C:0010H         LINE#         11
+  C:0012H         LINE#         12
+  C:0014H         LINE#         14
+  C:0017H         LINE#         15
+  C:0019H         LINE#         16
+  C:001BH         LINE#         17
+  -------         ENDMOD        TIMER_1_MODE_1
+
+*** WARNING L5: CODE SPACE MEMORY OVERLAP
+    FROM:    0000H
+    TO:      0013H
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0030H BYTE ( 2%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=48
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
