@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Mon Jul 26 10:26:01 2021
+# Process ID: 10124
+# Log file: C:/Users/ECADVLSI/Documents/Pacchu_437/project_1/project_1.runs/synth_1/LOGIC_GATES.vds
+# Journal file: C:/Users/ECADVLSI/Documents/Pacchu_437/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source LOGIC_GATES.tcl -notrace
