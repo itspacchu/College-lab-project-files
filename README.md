@@ -79,16 +79,16 @@ form.
 
 > ## Scripting Languages Lab (3-1)
 
--  [ ] Write a Ruby script to create a new string which is n copies of a given string where n is a non-
+-  [x] Write a Ruby script to create a new string which is n copies of a given string where n is a non-
 negative integer 
-- [ ] Write a Ruby script which accept the radius of a circle from the user and compute the parameter 
+- [x] Write a Ruby script which accept the radius of a circle from the user and compute the parameter 
 and area. 
-- [ ] Write a Ruby script which accept the user's first and last name and print them in reverse order 
+- [x] Write a Ruby script which accept the user's first and last name and print them in reverse order 
 with a space between them 
-- [ ] Write a Ruby script to accept a filename from the user print the extension of that 
-- [ ] Write a Ruby script to find the greatest of three numbers 
-- [ ] Write a Ruby script to print odd numbers from 10 to 1 
-- [ ] Write a Ruby scirpt to check two integers and return true if one of them is 20 otherwise return 
+- [x] Write a Ruby script to accept a filename from the user print the extension of that 
+- [x] Write a Ruby script to find the greatest of three numbers 
+- [x] Write a Ruby script to print odd numbers from 10 to 1 
+- [x] Write a Ruby scirpt to check two integers and return true if one of them is 20 otherwise return 
 their sum 
 - [ ] Write a Ruby script to check two temperatures and return true if one is less than 0 and the other 
 is greater than 100 
