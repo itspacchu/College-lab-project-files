@@ -90,10 +90,10 @@ with a space between them
 - [x] Write a Ruby script to print odd numbers from 10 to 1 
 - [x] Write a Ruby scirpt to check two integers and return true if one of them is 20 otherwise return 
 their sum 
-- [ ] Write a Ruby script to check two temperatures and return true if one is less than 0 and the other 
+- [x] Write a Ruby script to check two temperatures and return true if one is less than 0 and the other 
 is greater than 100 
-- [ ] Write a Ruby script to print the elements of a given array 
--  [ ] Write a Ruby program to retrieve the total marks where subject name and marks of a student 
+- [x] Write a Ruby script to print the elements of a given array 
+-  [x] Write a Ruby program to retrieve the total marks where subject name and marks of a student 
 stored in a hash  
 -  [ ] Write a TCL script to find the factorial of a number 
 -  [ ] Write a TCL script that multiplies the numbers from 1 to 10 
