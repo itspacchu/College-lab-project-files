@@ -1,0 +1,21 @@
+clc;
+t = 0:1000;
+fs = 0.01;
+sig = sin(2*pi*fs*t);
+D = 20; % downsample by
+DownSampledArray = decimate(sig,D);
+display(length(DownSampledArray))
+
+%self decimation function
+SelfDownsample = zeros(ceil(length(sig)/D)-1);
+for I = 1:(length(SelfDownsample))
+    SelfDownsample(I) = sig(I*D);
+end
+
+subplot(311)
+stem(sig)
+
+subplot(312)
+stem(DownSampledArray)
+subplot(313)
+stem(SelfDownsample)
