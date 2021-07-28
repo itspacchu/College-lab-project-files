@@ -47,8 +47,6 @@ and some other stuff i'm too lazy
 
 
 
-``` these labs aren't conducted yet ```
-
 -----
 
 <br>
