@@ -27,8 +27,8 @@
 - [x] All Gate Design using HDL
 - [x]  2 X 1 Decoder
 - [x]  8 x 3 ENCODER
-- [ ] 8 X 3 Priority Encoder
-- [ ] Binary to GrayCode Conversion 4bit
+- [x] 8 X 3 Priority Encoder
+- [x] Binary to GrayCode Conversion 4bit
 -  [ ] 8x1 Multiplexer
 - [ ] D Flip Flop in hdl
   
@@ -66,9 +66,9 @@ form.
 - [ ] Implementation of HP IIR Filter for a given Sequence/Signal 
 -  [ ] Generation of Narrow Band Signal through Filtering 
 -  [ ] Generation of DTMF Signals 
--  [ ] Implementation of Decimation Process 
--  [ ] Implementation of Interpolation Process 
--  [ ] Implementation of I/D Sampling Rate Converters 
+-  [x] Implementation of Decimation Process 
+-  [x] Implementation of Interpolation Process 
+-  [x] Implementation of I/D Sampling Rate Converters 
 -  [ ] Impulse Response of First order and Second Order Systems.   
 
 <br>
