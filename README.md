@@ -56,14 +56,14 @@ and some other stuff i'm too lazy
 
 - [ ] Generation of Sinusoidal Waveform or Signal based on Recursive Difference Equations 
 - [ ] Histogram of White Gaussian Noise and Uniformly Distributed Noise.  
-- [ ] To find DFT / IDFT of given DT Signal 
+- [x] To find DFT / IDFT of given DT Signal 
 - [ ] To find Frequency Response of a given System given in Transfer Function/ Differential equation 
 form. 
 - [ ] Obtain Fourier series coefficients by formula and using FET and compare for half sine wave.  
-- [ ] Implementation of FFT of given Sequence 
-- [ ] Determination of Power Spectrum of a given Signal(s). 
-- [ ] Implementation of LP FIR Filter for a given Sequence/Signal. 
-- [ ] Implementation of HP IIR Filter for a given Sequence/Signal 
+- [x] Implementation of FFT of given Sequence 
+- [x] Determination of Power Spectrum of a given Signal(s). 
+- [x] Implementation of LP FIR Filter for a given Sequence/Signal. 
+- [x] Implementation of HP IIR Filter for a given Sequence/Signal 
 -  [ ] Generation of Narrow Band Signal through Filtering 
 -  [ ] Generation of DTMF Signals 
 -  [x] Implementation of Decimation Process 
