@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:22:08 MDT 2015
+# IP Build 1209967 on Tue Apr 21 11:39:20 MDT 2015
+# Start of session at: Sat Jul 31 10:49:19 2021
+# Process ID: 9308
+# Log file: C:/Users/ECADVLSI/Documents/Pacchu_437/exp_5/exp_5.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/ECADVLSI/Documents/Pacchu_437/exp_5/exp_5.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/ECADVLSI/Documents/Pacchu_437/exp_5/exp_5.sim/sim_1/behav/xsim.dir/exp_5test_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1769759969 -regid "211047792_1777511312_210614066_228" -xml C:/Users/ECADVLSI/Documents/Pacchu_437/exp_5/exp_5.sim/sim_1/be..."
+    (file "C:/Users/ECADVLSI/Documents/Pacchu_437/exp_5/exp_5.sim/sim_1/behav/xsim.dir/exp_5test_behav/webtalk/xsim_webtalk.tcl" line 32)
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 31 10:49:20 2021...
