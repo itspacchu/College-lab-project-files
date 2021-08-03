@@ -29,14 +29,14 @@
 - [x]  8 x 3 ENCODER
 - [x] 8 X 3 Priority Encoder
 - [x] Binary to GrayCode Conversion 4bit
--  [ ] 8x1 Multiplexer
+- [x] 8x1 Multiplexer
 - [ ] D Flip Flop in hdl
   
 ### Some Autocad software ( *no Autocad License* )
 
--  [ ] design CMOS Inverter 
--  [ ] design 2 Input CMOS NAND Gate
--  [ ] design 2 Input CMOS NAND Gate
+-  [x] design CMOS Inverter 
+-  [x] design 2 Input CMOS NAND Gate
+-  [x] design 2 Input CMOS NAND Gate
 -  [ ] Design 2x1 Multiplexer
 -  [ ] Design 6 Transistor SRAM Cell
 
