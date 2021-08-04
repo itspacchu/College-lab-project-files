@@ -1,0 +1,17 @@
+// DSCH 2.7f
+// 8/3/2021 10:41:04 AM
+// C:\Users\ECADVLSI\Desktop\MicroWindExp\CMOS_NOT.sch
+
+module CMOS_NOT( in5,out2);
+ input in5;
+ output out2;
+ pmos #(17) pmos(out2,vdd,in5); // 2.0u 0.12u
+ nmos #(17) nmos(out2,vss,in5); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in5=~in5;
+
+// Simulation parameters
+// in5 CLK 10 10
