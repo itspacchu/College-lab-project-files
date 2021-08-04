@@ -32,7 +32,7 @@
 - [x] 8x1 Multiplexer
 - [ ] D Flip Flop in hdl
   
-### Some Autocad software ( *no Autocad License* )
+### Some Autocad software 
 
 -  [x] design CMOS Inverter 
 -  [x] design 2 Input CMOS NAND Gate
@@ -52,7 +52,6 @@ and some other stuff i'm too lazy
 <br>
 
 > ## DSP LAB (3-2)
-*They haven't given MATLAB licenses to us*
 
 - [ ] Generation of Sinusoidal Waveform or Signal based on Recursive Difference Equations 
 - [ ] Histogram of White Gaussian Noise and Uniformly Distributed Noise.  
