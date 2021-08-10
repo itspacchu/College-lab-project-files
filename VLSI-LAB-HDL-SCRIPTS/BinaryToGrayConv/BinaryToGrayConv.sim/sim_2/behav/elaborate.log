@@ -1,0 +1,18 @@
+Vivado Simulator 2015.1
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.1/bin/unwrapped/win64.o/xelab.exe -wto ce37846cebc4415da98d697b3deca25b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot bin2gray_test_behav xil_defaultlib.bin2gray_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/ECADVLSI/Documents/Pacchu_437/BinaryToGrayConv/BinaryToGrayConv.srcs/sources_1/new/bin2gray.v" Line 3. Module bin2gray has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/ECADVLSI/Documents/Pacchu_437/BinaryToGrayConv/BinaryToGrayConv.sim/sim_2/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/ECADVLSI/Documents/Pacchu_437/BinaryToGrayConv/BinaryToGrayConv.srcs/sources_1/new/bin2gray.v" Line 3. Module bin2gray has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/ECADVLSI/Documents/Pacchu_437/BinaryToGrayConv/BinaryToGrayConv.sim/sim_2/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bin2gray
+Compiling module xil_defaultlib.bin2gray_test
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot bin2gray_test_behav

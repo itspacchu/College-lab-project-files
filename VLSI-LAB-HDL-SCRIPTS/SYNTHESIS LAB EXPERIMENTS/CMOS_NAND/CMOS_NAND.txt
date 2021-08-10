@@ -1,0 +1,21 @@
+// DSCH 2.7f
+// 8/3/2021 11:13:20 AM
+// C:\Users\ECADVLSI\Desktop\MicroWindExp\CMOS_NAND\CMOS_NAND.sch
+
+module CMOS_NAND( A,B,Out);
+ input A,B;
+ output Out;
+ pmos #(24) pmos(Out,vdd,B); // 2.0u 0.12u
+ pmos #(24) pmos(Out,vdd,A); // 2.0u 0.12u
+ nmos #(24) nmos(Out,w4,B); // 1.0u 0.12u
+ nmos #(10) nmos(w4,vss,A); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 A=~A;
+#2000 B=~B;
+
+// Simulation parameters
+// A CLK 10 10
+// B CLK 20 20

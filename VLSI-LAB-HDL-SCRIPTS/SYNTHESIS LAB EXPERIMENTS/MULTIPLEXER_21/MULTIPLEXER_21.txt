@@ -1,0 +1,23 @@
+// DSCH 2.7f
+// 8/3/2021 11:27:31 AM
+// C:\Users\ECADVLSI\Desktop\MicroWindExp\MULTIPLEXER_21\MULTIPLEXER_21.sch
+
+module MULTIPLEXER_21( sel,A,B,out1);
+ input sel,A,B;
+ output out1;
+ and #(16) and(w3,B,w2);
+ and #(16) and(w6,A,sel);
+ not #(10) inv(w2,sel);
+ or #(16) or(out1,w6,w3);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 sel=~sel;
+#2000 A=~A;
+#4000 B=~B;
+
+// Simulation parameters
+// sel CLK 10 10
+// A CLK 20 20
+// B CLK 40 40

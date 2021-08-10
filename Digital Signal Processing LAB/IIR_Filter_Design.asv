@@ -1,0 +1,67 @@
+clc;clear all;close all;
+
+%  HIGH PASS BUTTERWORTH FILTER IIR
+%     |             .----------
+% Ap  |            /
+% 0.8 |           /
+%     |          /
+% As  |         /
+% 0.2 | -------.
+%     ----------------------------
+%      ws (0.2)      wp (0.8)
+
+wp = input('Enter wp : ');
+ws = input('Enter ws : ');
+
+Ap = input('Enter Ap : ');
+As = input('Enter As : ');
+
+% convert all digital parameters into Digital parammeters 
+% using Bilinear Transform method
+
+T = 1;
+wpa = (2/T)*tan(wp/2);
+wsa = (2/T)*tan(ws/2);
+
+% convert gains to DB
+
+ApdB = -20*log(Ap);
+AsdB = -20*log(As);
+
+% Butterworth filter thing convert
+% Get the Butterworth Filter N order and w_c cutoff values
+
+[N, w_c] = buttord(wpa,wsa,ApdB,AsdB,'s');
+[Nr, Dr] = butter(N,w_c,'high','s');
+
+% convert Analog System into a Digital Signal using Bilinear Transform
+[b,a] = bilinear(Nr,Dr,1/T);
+w_iter = 0:pi/16:pi;
+freqResponse = freqz(b,a,w_iter);
+magSpec = abs(freqResponse)./pi;
+phaSpec = angle(freqResponse)./pi; %normalizing frequencies
+
+% plot all shet
+subplot(311)
+plot(w_iter,magSpec);
+title('Magnitude Spectrum');
+xlabel('w ---> ')
+ylabel('mag(w)')
+
+subplot(312)
+plot(w_iter,phaSpec);
+xlabel(' w ----> ')
+ylabel('phase(w)')
+title('Phase Spectrum')
+
+% making a function with exponentials sweeping frequency just to try the filter out
+nn = 0:1/T:50;
+fxn = sin((nn.^2)/10);
+impulseRespo = impz(b,a,nn);
+convOut = conv(fxn,impulseRespo);
+subplot(323)
+plot(fxn)
+title('unfiltered signal fxn(n)')
+subplot(324)
+plot(convOut)
+title('h(n) * myfunc(n)');

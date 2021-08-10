@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 
-module Encoder83(e,d,c);
+module encoder83(e,d,c);
     input e;
-    input[7:0] d;
-    output[2:0] c;
+    input [7:0]d;
+    output reg [2:0] c;
     always@(e,d)
     begin
         if(e)
@@ -17,17 +17,17 @@ module Encoder83(e,d,c);
                 8'b00001000:
                     c = 3'b011;
                 8'b00010000:
-                    c = 3'b100;
+                    c = 3'b100 ;    
                 8'b00100000:
                     c = 3'b101;
                 8'b01000000:
                     c = 3'b110;
                 8'b10000000:
                     c = 3'b111;
-                default:
-                    c = 3'bx; //don't care output
+            default:
+                c = 3'bx;
             endcase
-        else
-            c = 3'bz; //high impedence 
-    end    
+         else
+            c = 3'bz;                          
+         end        
 endmodule

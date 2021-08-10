@@ -27,16 +27,16 @@
 - [x] All Gate Design using HDL
 - [x]  2 X 1 Decoder
 - [x]  8 x 3 ENCODER
-- [ ] 8 X 3 Priority Encoder
-- [ ] Binary to GrayCode Conversion 4bit
--  [ ] 8x1 Multiplexer
+- [x] 8 X 3 Priority Encoder
+- [x] Binary to GrayCode Conversion 4bit
+- [x] 8x1 Multiplexer
 - [ ] D Flip Flop in hdl
   
-### Some Autocad software ( *no Autocad License* )
+### Some Autocad software 
 
--  [ ] design CMOS Inverter 
--  [ ] design 2 Input CMOS NAND Gate
--  [ ] design 2 Input CMOS NAND Gate
+-  [x] design CMOS Inverter 
+-  [x] design 2 Input CMOS NAND Gate
+-  [x] design 2 Input CMOS NAND Gate
 -  [ ] Design 2x1 Multiplexer
 -  [ ] Design 6 Transistor SRAM Cell
 
@@ -52,23 +52,22 @@ and some other stuff i'm too lazy
 <br>
 
 > ## DSP LAB (3-2)
-*They haven't given MATLAB licenses to us*
 
 - [ ] Generation of Sinusoidal Waveform or Signal based on Recursive Difference Equations 
 - [ ] Histogram of White Gaussian Noise and Uniformly Distributed Noise.  
-- [ ] To find DFT / IDFT of given DT Signal 
+- [x] To find DFT / IDFT of given DT Signal 
 - [ ] To find Frequency Response of a given System given in Transfer Function/ Differential equation 
 form. 
 - [ ] Obtain Fourier series coefficients by formula and using FET and compare for half sine wave.  
-- [ ] Implementation of FFT of given Sequence 
-- [ ] Determination of Power Spectrum of a given Signal(s). 
-- [ ] Implementation of LP FIR Filter for a given Sequence/Signal. 
-- [ ] Implementation of HP IIR Filter for a given Sequence/Signal 
+- [x] Implementation of FFT of given Sequence 
+- [x] Determination of Power Spectrum of a given Signal(s). 
+- [x] Implementation of LP FIR Filter for a given Sequence/Signal. 
+- [x] Implementation of HP IIR Filter for a given Sequence/Signal 
 -  [ ] Generation of Narrow Band Signal through Filtering 
 -  [ ] Generation of DTMF Signals 
--  [ ] Implementation of Decimation Process 
--  [ ] Implementation of Interpolation Process 
--  [ ] Implementation of I/D Sampling Rate Converters 
+-  [x] Implementation of Decimation Process 
+-  [x] Implementation of Interpolation Process 
+-  [x] Implementation of I/D Sampling Rate Converters 
 -  [ ] Impulse Response of First order and Second Order Systems.   
 
 <br>
