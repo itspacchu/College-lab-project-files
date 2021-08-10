@@ -30,21 +30,17 @@
 - [x] 8 X 3 Priority Encoder
 - [x] Binary to GrayCode Conversion 4bit
 - [x] 8x1 Multiplexer
-- [ ] D Flip Flop in hdl
+- [x] D Flip Flop in hdl
   
 ### Some Autocad software 
 
 -  [x] design CMOS Inverter 
 -  [x] design 2 Input CMOS NAND Gate
 -  [x] design 2 Input CMOS NAND Gate
--  [ ] Design 2x1 Multiplexer
--  [ ] Design 6 Transistor SRAM Cell
-
-  
-and some other stuff i'm too lazy
+-  [x] Design 2x1 Multiplexer
+-  [x] Design 6 Transistor SRAM Cell
 
 <br>
-
 
 
 -----
@@ -53,10 +49,10 @@ and some other stuff i'm too lazy
 
 > ## DSP LAB (3-2)
 
-- [ ] Generation of Sinusoidal Waveform or Signal based on Recursive Difference Equations 
-- [ ] Histogram of White Gaussian Noise and Uniformly Distributed Noise.  
+- [x] Generation of Sinusoidal Waveform or Signal based on Recursive Difference Equations 
+- [x] Histogram of White Gaussian Noise and Uniformly Distributed Noise.  
 - [x] To find DFT / IDFT of given DT Signal 
-- [ ] To find Frequency Response of a given System given in Transfer Function/ Differential equation 
+- [x] To find Frequency Response of a given System given in Transfer Function/ Differential equation 
 form. 
 - [ ] Obtain Fourier series coefficients by formula and using FET and compare for half sine wave.  
 - [x] Implementation of FFT of given Sequence 
@@ -68,7 +64,7 @@ form.
 -  [x] Implementation of Decimation Process 
 -  [x] Implementation of Interpolation Process 
 -  [x] Implementation of I/D Sampling Rate Converters 
--  [ ] Impulse Response of First order and Second Order Systems.   
+-  [x] Impulse Response of First order and Second Order Systems.   
 
 <br>
 
@@ -92,19 +88,19 @@ is greater than 100
 - [x] Write a Ruby script to print the elements of a given array 
 -  [x] Write a Ruby program to retrieve the total marks where subject name and marks of a student 
 stored in a hash  
--  [ ] Write a TCL script to find the factorial of a number 
--  [ ] Write a TCL script that multiplies the numbers from 1 to 10 
--  [ ] Write a TCL script for Sorting a list using a comparison function 
--  [ ] Write  a  TCL  script  to  (i)create  a  list    (ii  )append  elements  to  the  list  (iii)Traverse  the  list 
+-  [x] Write a TCL script to find the factorial of a number 
+-  [x] Write a TCL script that multiplies the numbers from 1 to 10 
+-  [x] Write a TCL script for Sorting a list using a comparison function 
+-  [x] Write  a  TCL  script  to  (i)create  a  list    (ii  )append  elements  to  the  list  (iii)Traverse  the  list 
 (iv)Concatenate the list 
--  [ ] Write a TCL script to comparing the file modified times. 
--  [ ] Write a TCL script to Copy a file and translate to native format. 
-- [ ]   a) Write a Perl script to find the largest number among three numbers. 
+-  [x] Write a TCL script to comparing the file modified times. 
+-  [x] Write a TCL script to Copy a file and translate to native format. 
+- [x]   a) Write a Perl script to find the largest number among three numbers. 
  b) Write a Perl script to print the multiplication tables from 1-10 using subroutines. 
--  [ ] Write a Perl program to implement the following list of manipulating functions 
+-  [x] Write a Perl program to implement the following list of manipulating functions 
 a)Shift 
 b)Unshift 
 c) Push 
--  [ ] a) Write a Perl script to substitute a word, with another word in a string. 
+-  [x] a) Write a Perl script to substitute a word, with another word in a string. 
 b) Write a Perl script to validate IP address and email address. 
--  [ ]  Write a Perl script to print the file in reverse order using command line arguments
+-  [x]  Write a Perl script to print the file in reverse order using command line arguments
